@@ -1,0 +1,22 @@
+@use '../Home/base.scss';
+.training {
+  text-align: left;
+  img {
+    max-width: 100%;
+  }
+  div {
+    margin: 0 auto;
+    width: 1000px;
+    #title-training {
+      font-size: 30px;
+      text-align: center;
+      color: base.$blue;
+      font-weight: bold;
+    }
+    p {
+      text-align: justify;
+      // Độ dãn dòng
+      line-height: 160%;
+    }
+  }
+}

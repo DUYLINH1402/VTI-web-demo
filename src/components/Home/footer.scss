@@ -1,0 +1,26 @@
+@use './base';
+
+// Tạo Nesting cho sass
+.footer {
+  background-color: base.$footerColor;
+  display: flex;
+  // border-radius: 15px;
+  justify-content: center;
+  margin-top: 15px;
+  ul {
+    li {
+      font-size: smaller;
+      font-weight: 300;
+      text-align: left;
+    }
+  }
+  .column-4 div {
+    display: flex;
+    margin-right: 8px;
+  }
+}
+.Copyright {
+  color: white;
+  background-color: base.$blue;
+  padding: 0.5px;
+}

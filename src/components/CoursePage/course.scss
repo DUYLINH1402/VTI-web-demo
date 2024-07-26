@@ -1,0 +1,34 @@
+@use '../Home/base.scss';
+
+article {
+  font-family: base.$font-text;
+  #title-course {
+    color: base.$blue;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px auto;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .course-img {
+    width: 100%;
+  }
+  .course {
+    width: min-content;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    /* Canh giữa cho các Card */
+    margin: 0 auto;
+    img {
+      /* Thời gian Zoom */
+      transition: all 0.5s;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    :hover img {
+      /* Khi hover vào sẽ zoom lên */
+      transform: scale(1.07);
+    }
+  }
+}

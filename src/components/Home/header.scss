@@ -1,0 +1,61 @@
+@use './base';
+
+// Tạo Nesting
+.header {
+  background-color: base.$headerColor;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  .advise img {
+    width: 70px;
+    height: 80px;
+  }
+  .back-top {
+    position: fixed;
+    scale: 0.8;
+    right: 10px;
+    bottom: 90px;
+    /* Để Box Designer nằm trên những layout khác */
+    z-index: 1;
+    border-radius: 100%;
+    transition: 0.5s;
+  }
+  .info-designer {
+    /* Căn chỉnh vị trí Box Designer */
+    position: fixed;
+    left: 2px;
+    bottom: 10px;
+    z-index: 1;
+    border: double;
+    border-radius: 8px;
+    padding: 2px;
+    font-size: 10px;
+    color: base.$brow;
+  }
+  .header-logo {
+    margin: 15px;
+  }
+  .header-right {
+    ul {
+      display: flex;
+      text-align: center;
+      padding-top: 8px;
+      li {
+        list-style: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+        // Mặc dù dùng thẻ Link nhưng khi css thì chọc vào thẻ </a>
+        a {
+          color: base.$blue;
+          text-decoration: none;
+        }
+        a:hover {
+          color: rgb(82, 154, 231);
+        }
+      }
+    }
+  }
+}

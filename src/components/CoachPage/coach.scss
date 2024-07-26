@@ -1,0 +1,29 @@
+@use '../Home/base';
+
+.coach {
+  #coach-banners {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #title-coach {
+    border: double 5px;
+    border-radius: 20px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 15px;
+    color: base.$blue;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .parah-coach {
+    font-size: larger;
+    color: base.$blue;
+  }
+  .source-coach {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

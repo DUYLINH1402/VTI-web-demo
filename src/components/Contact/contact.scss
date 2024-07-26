@@ -1,0 +1,53 @@
+@use '../Home/base.scss';
+.contact-image {
+  width: 100%;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  .title-contact {
+    text-transform: capitalize;
+    color: base.$blue;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto 20px;
+  }
+
+  ul {
+    width: 600px;
+    word-spacing: 3px;
+    list-style: none;
+    text-align: justify;
+    margin-left: 70px;
+    line-height: 170%;
+    li {
+      margin-bottom: 30px;
+      .phone {
+        margin-top: -10px;
+      }
+      img {
+        width: 14px;
+        margin-right: 10px;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    #mail {
+      width: 20px;
+      margin-right: 10px;
+    }
+    #web {
+      width: 18px;
+      margin-right: 10px;
+    }
+    #time {
+      width: 18px;
+      margin-right: 10px;
+    }
+  }
+}
+.google-map {
+  margin-top: 100px;
+}

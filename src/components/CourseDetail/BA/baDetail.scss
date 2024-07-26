@@ -1,0 +1,286 @@
+@use './../../Home/base.scss';
+
+h1 {
+  color: base.$blue;
+  text-transform: uppercase;
+}
+.box-1-data-ba {
+  margin-top: 50px;
+  font-weight: 380;
+  .row-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    .row-1-left {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background: #dddddd9b;
+      width: 600px;
+      height: 350px;
+      border-radius: 10px;
+      .content {
+        font-family: base.$font-text;
+        padding: 10px 30px;
+        text-align: justify;
+        font-size: 15px;
+        word-spacing: 2px;
+        line-height: 25px;
+
+        .btn {
+          width: 540px;
+          display: flex;
+          margin: 20px 0px;
+          text-align: center;
+          justify-content: center;
+
+          #btn-courseDetail {
+            width: 150px;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: base.$font-text;
+            background-color: #043f94;
+            background-image: linear-gradient(to right, #043f94, #138add);
+            color: #fff;
+            border-radius: 25px;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-right: 20px;
+          }
+        }
+        h1 {
+          text-transform: uppercase;
+          font-size: 30px;
+          text-align: left;
+        }
+      }
+    }
+    .row-1-right {
+      img {
+        width: 400px;
+        height: 300px;
+      }
+    }
+  }
+}
+.box-2-data-ba {
+  .row-2 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    .row-2-left,
+    .row-2-right {
+      .content {
+        width: 550px;
+        // border-right: solid 2px rgb(15, 15, 68);
+        font-family: base.$font-text;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 5px;
+        h1 {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+          text-align: left;
+          margin-left: 45px;
+        }
+        ul {
+          margin: 0px;
+          li {
+            display: flex;
+          }
+        }
+        .icon-logo {
+          width: 25px;
+          height: 25px;
+          margin-right: 4px;
+          margin-top: 13px;
+        }
+      }
+    }
+    .row-2-right {
+      .content {
+        border-left: solid 2px rgb(15, 15, 68);
+        // border-right: none;
+        padding: 0px;
+      }
+    }
+  }
+}
+.box-4-data-ba {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  .row-4-left {
+    img {
+      width: 460px;
+      height: 350px;
+      display: inline;
+    }
+  }
+  .row-4-right {
+    width: 640px;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: left;
+      margin-left: 45px;
+    }
+    ul {
+      li {
+        display: flex;
+        list-style: none;
+        text-align: left;
+        margin-bottom: 10px;
+        // font-family: base.$font-text;
+        font-size: 15px;
+        line-height: 25px;
+        .icon-logo {
+          width: 25px;
+          height: 25px;
+          margin-right: 4px;
+          // margin-top: 13px;
+        }
+      }
+    }
+  }
+}
+.box-5-data-ba {
+  margin-top: 100px;
+  #box-5-title {
+    width: 1170px;
+    text-align: center;
+    margin: 0px auto 20px;
+    font-size: 30px;
+  }
+  .node {
+    background-color: #043f94;
+    // Phối 2 màu với nhau
+    background-image: linear-gradient(to right, #043f94, #138add);
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px 30px 0px 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0px auto 0px;
+    font-weight: bold;
+    width: 80px;
+    height: 31px;
+  }
+
+  .content-box-5 {
+    display: flex;
+    position: relative;
+    width: 1170px;
+    margin: 0px auto;
+    padding: 40px 0px;
+    .line {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 3px;
+      background-image: linear-gradient(to right, #043f94, #138add);
+      z-index: -1;
+    }
+    .point {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-image: linear-gradient(to right, #043f94, #138add);
+      position: absolute;
+      top: 50%;
+      // Chỗ này lẽ ra phải là left: 50% để chấm tròn
+      // nằm ngay giữa, bị dính margin 30px ở đâu chưa tìm ra nên fix cứng
+      left: 570px;
+      margin-right: 0 auto;
+    }
+    .module-1,
+    .module-3,
+    .module-5,
+    .module-7 {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-around;
+      margin: 0 auto;
+      .left {
+        padding-right: 35px;
+        text-align: left;
+        line-height: 150%;
+        margin: auto 0px;
+        width: 550px;
+        .day {
+          font-style: oblique;
+          font-weight: 400;
+          color: #727272;
+          margin: 0px;
+        }
+        .module-title {
+          margin-right: 20px;
+          color: rgb(76, 180, 221);
+        }
+        li {
+          // font-family: base.$font-text;
+          font-size: 15px;
+          font-weight: 370;
+          line-height: 150%;
+        }
+      }
+      .right {
+        width: 50%;
+        margin: auto 0px;
+        img {
+          width: 500px;
+          height: 515px;
+          margin-left: 30px;
+          scale: 0.9;
+        }
+      }
+    }
+    .module-2,
+    .module-4,
+    .module-6,
+    .module-8 {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-around;
+      .right {
+        width: 590px;
+        text-align: left;
+        margin-left: 50px;
+        line-height: 150%;
+        margin: auto 0px;
+        padding-left: 50px;
+        .day {
+          font-style: oblique;
+          font-weight: 400;
+          color: #727272;
+          margin: 0px;
+        }
+        .module-title {
+          margin-top: 50px;
+          color: rgb(76, 180, 221);
+        }
+
+        li {
+          // font-family: base.$font-text;
+          // // line-height: 25px;
+          font-size: 15px;
+          font-weight: 370;
+        }
+      }
+      .left {
+        // width: 50%;
+        margin: auto 50px 0px;
+        img {
+          width: 500px;
+          height: 515px;
+          scale: 0.9;
+        }
+      }
+    }
+  }
+}

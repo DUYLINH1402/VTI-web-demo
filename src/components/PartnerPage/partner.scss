@@ -1,0 +1,38 @@
+@use '../Home/base.scss';
+
+.partner {
+  .partner-img {
+    img {
+      width: 100%;
+    }
+  }
+  #title-partner {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: base.$blue;
+    text-transform: capitalize;
+    margin: 50px auto;
+  }
+  .partner-logo {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      // margin-left: 40px;
+      li {
+        border-radius: 50px;
+        list-style: none;
+        border: double rgb(216, 160, 160) 1px;
+        // Set chiều dài 1 thẻ chứa logo
+        width: 290px;
+        img {
+          // Để logo tự co dãn theo đúng tỷ lệ
+          width: min-content;
+          max-width: 100%;
+          scale: 0.6;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use '../Home/base.scss';
+
+section {
+  div {
+    #blog-img {
+      width: 100%;
+    }
+    #title-blog {
+      font-size: 30px;
+      color: base.$blue;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px auto;
+    }
+    #para-blog {
+      margin-bottom: 50px;
+      color: base.$blue;
+      text-align: center;
+    }
+  }
+  .blog-content {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

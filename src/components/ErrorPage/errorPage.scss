@@ -1,0 +1,5 @@
+@use '../Home/base.scss';
+h2 {
+  color: base.$red;
+  font-family: base.$font-text;
+}

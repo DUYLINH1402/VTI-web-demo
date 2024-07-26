@@ -1,0 +1,20 @@
+@use '../Home/base.scss';
+
+.container-student {
+  .student-banners {
+    width: 100%;
+  }
+  .title-student {
+    color: base.$blue;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 50px auto;
+  }
+  .source-student {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

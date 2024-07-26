@@ -1,0 +1,30 @@
+@use './base.scss';
+
+.content {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  #img-content-2 {
+    margin-top: -50px;
+    scale: 0.78;
+  }
+}
+#title-cource {
+  // Dịch chuyển Phần khóa học lên phía trên
+  margin-top: -70px;
+  color: base.$blue;
+  font-size: 35px;
+}
+.card {
+  border: 1px;
+}
+// }
+// @keyframes fadeOut {
+//   0% {
+//       opacity: 1
+//   }
+
+//   100% {
+//       opacity: 0
+//   }

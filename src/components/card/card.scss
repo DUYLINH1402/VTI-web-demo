@@ -1,0 +1,158 @@
+@use '../Home/base.scss';
+
+.card-image {
+  .title {
+    margin: 5px 10px 50px 10px;
+    width: 350px;
+    /*  Để title nằm gọn dưới ảnh */
+    display: inline-block;
+  }
+}
+.card-content-image img {
+  margin-right: 30px;
+  border-radius: 10px;
+}
+// Định dạng cho Card Blog
+.card-blog {
+  text-decoration: none;
+  width: min-content;
+  .card-blog-image {
+    width: 350px;
+    height: 240px;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+  .card-blog-image:hover {
+    transform: scale(1.05);
+  }
+  .new-base {
+    background-color: aliceblue;
+    position: relative;
+    width: 300px;
+    border: solid 1px;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: -40px;
+    margin-bottom: 60px;
+    transition: 0.5s;
+    #title-new {
+      margin-bottom: -10px;
+      font-weight: bold;
+      color: base.$blue;
+    }
+    #line {
+      margin-bottom: -10px;
+      // position: absolute;
+    }
+    #go-click {
+      position: absolute;
+      right: 25px;
+      bottom: 25px;
+      transition: 0.5s;
+    }
+    // Khi click vào icon mũi tên sẽ xoay 90 độ
+    #go-click:hover {
+      transform: rotate(-90deg);
+    }
+  }
+  .new-base:hover {
+    transform: scale(1.05);
+    background-color: rgba(235, 218, 132, 0.814);
+  }
+}
+
+//Card Coach
+.coach {
+  margin-bottom: 50px;
+  // width: 350px;
+
+  .container-coach {
+    display: flex;
+    // width: 350px;
+    .card-coach {
+      position: relative;
+      width: max-content;
+      .card-coach-image {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+      }
+      .title-name {
+        color: base.$blue;
+        #name {
+          margin: 0px 0px;
+          font-size: 15px;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+    }
+    .details-coach {
+      #row-name {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+      }
+      position: absolute;
+      width: 240px;
+      background-color: base.$blue;
+      margin-left: 10px;
+      margin-top: 20px;
+      border: solid 1px;
+      border-radius: 20px;
+      color: white;
+      text-align: left;
+      font-size: 14px;
+      padding: 20px;
+      // Ẩn đi nội dung của thẻ coach
+      opacity: 0;
+      transition: all 0.8s;
+    }
+    // Khi hover vào sẽ hiển thị nội dung thẻ Coach bằng thuộc tính opacity (Cách dễ nhất)
+    .details-coach:hover {
+      transition: all 0.8s;
+      opacity: 100;
+    }
+  }
+}
+//Card Student
+.student {
+  margin-bottom: 50px;
+  .container {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    margin-right: 20px;
+    .card-student {
+      margin: 0 auto;
+      width: 189px;
+      height: 189px;
+      // Chèn ảnh vòng tròn ngoài làm background
+      background-image: url(https://vtiacademy.edu.vn/template/frontend/images/bg_cuuhocvien.png);
+      // Không cho ảnh nền lặp lại
+      background-repeat: no-repeat;
+      .card-student-image {
+        display: block;
+        position: absolute;
+        border-radius: 100%;
+        width: 153px;
+        height: 153px;
+        max-width: 100%;
+        margin: 12px 24px 24px 12px;
+        // margin-top: 12px;
+        // margin-right: 53px;
+      }
+    }
+    .title-name {
+      color: base.$blue;
+      #name {
+        margin: 0px 0px;
+        font-size: larger;
+      }
+    }
+    .title-class {
+    }
+  }
+}
