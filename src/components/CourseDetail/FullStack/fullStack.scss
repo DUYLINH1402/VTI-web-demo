@@ -4,7 +4,7 @@ h1 {
   color: base.$blue;
   text-transform: uppercase;
 }
-.box-1-data-ba {
+.box-1-data-fullstack {
   margin-top: 50px;
   font-weight: 380;
   .row-1 {
@@ -62,7 +62,7 @@ h1 {
     }
   }
 }
-.box-2-data-ba {
+.box-2-data-fullstack {
   .row-2 {
     padding: 20px;
     display: flex;
@@ -71,7 +71,6 @@ h1 {
     .row-2-right {
       .content {
         width: 550px;
-        // border-right: solid 2px rgb(15, 15, 68);
         font-family: base.$font-text;
         text-align: justify;
         font-size: 15px;
@@ -100,13 +99,12 @@ h1 {
     .row-2-right {
       .content {
         border-left: solid 2px rgb(15, 15, 68);
-        // border-right: none;
         padding: 0px;
       }
     }
   }
 }
-.box-4-data-ba {
+.box-4-data-fullstack {
   margin: 20px;
   display: flex;
   justify-content: center;
@@ -133,20 +131,18 @@ h1 {
         list-style: none;
         text-align: left;
         margin-bottom: 10px;
-        // font-family: base.$font-text;
         font-size: 15px;
         line-height: 25px;
         .icon-logo {
           width: 25px;
           height: 25px;
           margin-right: 4px;
-          // margin-top: 13px;
         }
       }
     }
   }
 }
-.box-5-data-ba {
+.box-5-data-fullstack {
   margin-top: 100px;
   #box-5-title {
     width: 1170px;
