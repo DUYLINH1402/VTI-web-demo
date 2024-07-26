@@ -6,7 +6,7 @@ export const FullStackDetail = () => {
   return (
     <>
       <img className="banners" src={Data.imgBanners} alt="Img-banners" />
-      <section className="box-1-data-analyst">
+      <section className="box-1-data-fullstack">
         <div className="row-1">
           <div className="row-1-left">
             <div className="content">
@@ -24,7 +24,7 @@ export const FullStackDetail = () => {
           </div>
         </div>
       </section>
-      <section className="box-2-data-analyst">
+      <section className="box-2-data-fullstack">
         <div className="row-2">
           <div className="row-2-left">
             <div className="content">
@@ -45,14 +45,6 @@ export const FullStackDetail = () => {
                     alt="img err"
                   />{' '}
                   <p>{Data.participants2}</p>
-                </li>
-                <li>
-                  <img
-                    className="icon-logo"
-                    src={Data.iconLogo}
-                    alt="img err"
-                  />
-                  <p>{Data.participants3}</p>
                 </li>
               </ul>
             </div>
@@ -106,12 +98,12 @@ export const FullStackDetail = () => {
           </div>
         </div>
       </section>
-      <section className="box-3-data-analyst">
+      <section className="box-3-data-fullstack">
         <div>
           <WhyChoseMe />
         </div>
       </section>
-      <section className="box-4-data-analyst">
+      <section className="box-4-data-fullstack">
         <div className="row-4">
           <div className="row-4-left">
             <img src={Data.imgBox4} alt="Image-box-4" />
@@ -139,7 +131,6 @@ export const FullStackDetail = () => {
                   {Data.box4_row2}
                 </li>
                 <li>
-                  {' '}
                   <img
                     className="icon-logo"
                     src={Data.iconLogo}
@@ -148,7 +139,6 @@ export const FullStackDetail = () => {
                   {Data.box4_row3}
                 </li>
                 <li>
-                  {' '}
                   <img
                     className="icon-logo"
                     src={Data.iconLogo}
@@ -157,13 +147,19 @@ export const FullStackDetail = () => {
                   {Data.box4_row4}
                 </li>
                 <li>
-                  {' '}
                   <img
                     className="icon-logo"
                     src={Data.iconLogo}
                     alt="img err"
                   />{' '}
                   {Data.box4_row5}
+                </li><li>
+                  <img
+                    className="icon-logo"
+                    src={Data.iconLogo}
+                    alt="img err"
+                  />{' '}
+                  {Data.box4_row6}
                 </li>
               </ul>
             </div>
@@ -171,7 +167,7 @@ export const FullStackDetail = () => {
           <div className=""></div>
         </div>
       </section>
-      <section id="courseDetail" className="box-5-data-analyst">
+      <section id="courseDetail" className="box-5-data-fullstack">
         <h1 id="box-5-title">Khung chương trình</h1>
         {/* MODULE 1 */}
         <div>
@@ -190,36 +186,77 @@ export const FullStackDetail = () => {
                 <li>{Data.module1_row1}</li>
                 <li>{Data.module1_row2}</li>
                 <li>{Data.module1_row3}</li>
-              </ul>
-              <p className="day"> Day 2</p>
-              <ul>
                 <li>{Data.module1_row4}</li>
                 <li>{Data.module1_row5}</li>
                 <li>{Data.module1_row6}</li>
-              </ul>
-              <p className="day"> Day 3</p>
-              <ul>
                 <li>{Data.module1_row7}</li>
+              </ul>
+              <p className="day"> Day 2</p>
+              <ul>
                 <li>{Data.module1_row8}</li>
                 <li>{Data.module1_row9}</li>
-              </ul>
-              <p className="day"> Day 4</p>
-              <ul>
                 <li>{Data.module1_row10}</li>
                 <li>{Data.module1_row11}</li>
               </ul>
-              <p className="day"> Day 5</p>
+              <p className="day"> Day 3</p>
               <ul>
                 <li>{Data.module1_row12}</li>
+              </ul>
+              <p className="day"> Day 4</p>
+              <ul>
                 <li>{Data.module1_row13}</li>
                 <li>{Data.module1_row14}</li>
-              </ul>
-              <p className="day"> Day 6</p>
-              <ul>
                 <li>{Data.module1_row15}</li>
                 <li>{Data.module1_row16}</li>
                 <li>{Data.module1_row17}</li>
                 <li>{Data.module1_row18}</li>
+              </ul>
+              <p className="day"> Day 5</p>
+              <ul>
+                <li>{Data.module1_row19}</li>
+                <li>{Data.module1_row20}</li>
+                <li>{Data.module1_row21}</li>
+                <li>{Data.module1_row22}</li>
+              </ul>
+              <p className="day"> Day 6</p>
+              <ul>
+                <li>{Data.module1_row23}</li>
+              </ul>
+              <p className="day"> Day 7</p>
+              <ul>
+                <li>{Data.module1_row24}</li>
+                <li>{Data.module1_row25}</li>
+                <li>{Data.module1_row26}</li>
+                <li>{Data.module1_row27}</li>
+                <li>{Data.module1_row28}</li>
+              </ul>
+              <p className="day"> Day 8</p>
+              <ul>
+                <li>{Data.module1_row29}</li>
+                <li>{Data.module1_row30}</li>
+                <li>{Data.module1_row31}</li>
+                <li>{Data.module1_row32}</li>
+                <li>{Data.module1_row33}</li>
+              </ul>
+              <p className="day"> Day 9</p>
+              <ul>
+                <li>{Data.module1_row34}</li>
+              </ul>
+              <p className="day"> Day 10</p>
+              <ul>
+                <li>{Data.module1_row35}</li>
+                <li>{Data.module1_row36}</li>
+                <li>{Data.module1_row37}</li>
+                <li>{Data.module1_row38}</li>
+                <li>{Data.module1_row39}</li>
+              </ul>
+              <p className="day"> Day 11</p>
+              <ul>
+                <li>{Data.module1_row40}</li>
+              </ul>
+              <p className="day"> Day 12</p>
+              <ul>
+                <li>{Data.module1_row41}</li>
               </ul>
             </div>
             <div className="right">
@@ -247,41 +284,133 @@ export const FullStackDetail = () => {
                 <li>{Data.module2_row1}</li>
                 <li>{Data.module2_row2}</li>
                 <li>{Data.module2_row3}</li>
-              </ul>
-              <p className="day"> Day 2</p>
-              <ul>
                 <li>{Data.module2_row4}</li>
                 <li>{Data.module2_row5}</li>
                 <li>{Data.module2_row6}</li>
-              </ul>
-              <p className="day"> Day 3</p>
-              <ul>
                 <li>{Data.module2_row7}</li>
                 <li>{Data.module2_row8}</li>
               </ul>
-              <p className="day"> Day 4</p>
+              <p className="day"> Day 2</p>
               <ul>
                 <li>{Data.module2_row9}</li>
                 <li>{Data.module2_row10}</li>
+                <li>{Data.module2_row11}</li>
+                <li>{Data.module2_row12}</li>
+                <li>{Data.module2_row13}</li>
+                <li>{Data.module2_row14}</li>
+                <li>{Data.module2_row15}</li>
+              </ul>
+              <p className="day"> Day 3</p>
+              <ul>
+                <li>{Data.module2_row16}</li>
+              </ul>
+              <p className="day"> Day 4</p>
+              <ul>
+                <li>{Data.module2_row17}</li>
+                <li>{Data.module2_row18}</li>
+                <li>{Data.module2_row19}</li>
+                <li>{Data.module2_row20}</li>
+                <li>{Data.module2_row21}</li>
+                <li>{Data.module2_row22}</li>
+                <li>{Data.module2_row23}</li>
               </ul>
               <p className="day"> Day 5</p>
               <ul>
-                <li>{Data.module2_row11}</li>
-                <li>{Data.module2_row12}</li>
+                <li>{Data.module2_row24}</li>
+                <li>{Data.module2_row25}</li>
+                <li>{Data.module2_row26}</li>
+                <li>{Data.module2_row27}</li>
+                <li>{Data.module2_row28}</li>
+                <li>{Data.module2_row29}</li>
+                <li>{Data.module2_row30}</li>
+                <li>{Data.module2_row31}</li>
+                <li>{Data.module2_row32}</li>
               </ul>
               <p className="day"> Day 6</p>
               <ul>
-                <li>{Data.module2_row13}</li>
-                <li>{Data.module2_row14}</li>
+                <li>{Data.module2_row33}</li>
               </ul>
               <p className="day"> Day 7</p>
               <ul>
-                <li>{Data.module2_row15}</li>
-                <li>{Data.module2_row16}</li>
+                <li>{Data.module2_row34}</li>
+                <li>{Data.module2_row35}</li>
+                <li>{Data.module2_row36}</li>
+                <li>{Data.module2_row37}</li>
+                <li>{Data.module2_row38}</li>
+                <li>{Data.module2_row39}</li>
               </ul>
               <p className="day"> Day 8</p>
               <ul>
-                <li>{Data.module2_row17}</li>
+                <li>{Data.module2_row40}</li>
+              </ul>
+              <p className="day"> Day 9</p>
+              <ul>
+                <li>{Data.module2_row41}</li>
+                <li>{Data.module2_row42}</li>
+                <li>{Data.module2_row43}</li>
+                <li>{Data.module2_row44}</li>
+              </ul>
+              <p className="day"> Day 10</p>
+              <ul>
+                <li>{Data.module2_row45}</li>
+                <li>{Data.module2_row46}</li>
+                <li>{Data.module2_row47}</li>
+                <li>{Data.module2_row48}</li>
+                <li>{Data.module2_row49}</li>
+                <li>{Data.module2_row50}</li>
+                <li>{Data.module2_row51}</li>
+              </ul>
+              <p className="day"> Day 11</p>
+              <ul>
+                <li>{Data.module2_row52}</li>
+                <li>{Data.module2_row53}</li>
+                <li>{Data.module2_row54}</li>
+                <li>{Data.module2_row55}</li>
+              </ul>
+              <p className="day"> Day 12</p>
+              <ul>
+                <li>{Data.module2_row56}</li>
+              </ul>
+              <p className="day"> Day 13</p>
+              <ul>
+                <li>{Data.module2_row57}</li>
+                <li>{Data.module2_row58}</li>
+                <li>{Data.module2_row59}</li>
+                <li>{Data.module2_row60}</li>
+                <li>{Data.module2_row61}</li>
+                <li>{Data.module2_row62}</li>
+                <li>{Data.module2_row63}</li>
+                <li>{Data.module2_row64}</li>
+              </ul>
+              <p className="day"> Day 14</p>
+              <ul>
+                <li>{Data.module2_row65}</li>
+                <li>{Data.module2_row66}</li>
+                <li>{Data.module2_row67}</li>
+                <li>{Data.module2_row68}</li>
+                <li>{Data.module2_row69}</li>
+                <li>{Data.module2_row70}</li>
+                <li>{Data.module2_row71}</li>
+              </ul>
+              <p className="day"> Day 15</p>
+              <ul>
+                <li>{Data.module2_row72}</li>
+              </ul>
+              <p className="day"> Day 16</p>
+              <ul>
+                <li>{Data.module2_row73}</li>
+                <li>{Data.module2_row74}</li>
+                <li>{Data.module2_row75}</li>
+              </ul>
+              <p className="day"> Day 17</p>
+              <ul>
+                <li>{Data.module2_row76}</li>
+              </ul>
+              <p className="day"> Day 17</p>
+              <ul>
+                <li>{Data.module2_row77}</li>
+                <li>{Data.module2_row78}</li>
+                <li>{Data.module2_row79}</li>
               </ul>
             </div>
           </div>
@@ -302,58 +431,38 @@ export const FullStackDetail = () => {
               <ul>
                 <li>{Data.module3_row1}</li>
                 <li>{Data.module3_row2}</li>
+                <li>{Data.module3_row3}</li>
+                <li>{Data.module3_row4}</li>
+                <li>{Data.module3_row5}</li>
               </ul>
               <p className="day"> Day 2</p>
               <ul>
-                <li>{Data.module3_row3}</li>
-                <li>{Data.module3_row4}</li>
-              </ul>
-              <p className="day"> Day 3</p>
-              <ul>
-                <li>{Data.module3_row5}</li>
                 <li>{Data.module3_row6}</li>
-              </ul>
-              <p className="day"> Day 4</p>
-              <ul>
                 <li>{Data.module3_row7}</li>
                 <li>{Data.module3_row8}</li>
               </ul>
-              <p className="day"> Day 5</p>
+              <p className="day"> Day 3</p>
               <ul>
                 <li>{Data.module3_row9}</li>
-              </ul>
-              <p className="day"> Day 6</p>
-              <ul>
                 <li>{Data.module3_row10}</li>
-              </ul>
-              <p className="day"> Day 7</p>
-              <ul>
                 <li>{Data.module3_row11}</li>
+              </ul>
+              <p className="day"> Day 4</p>
+              <ul>
                 <li>{Data.module3_row12}</li>
               </ul>
-              <p className="day"> Day 8</p>
+              <p className="day"> Day 5</p>
               <ul>
                 <li>{Data.module3_row13}</li>
                 <li>{Data.module3_row14}</li>
-              </ul>
-              <p className="day"> Day 9</p>
-              <ul>
                 <li>{Data.module3_row15}</li>
-                <li>{Data.module3_row16}</li>
               </ul>
-              <p className="day"> Day 10</p>
+              <p className="day"> Day 6</p>
               <ul>
+                <li>{Data.module3_row16}</li>
                 <li>{Data.module3_row17}</li>
                 <li>{Data.module3_row18}</li>
-              </ul>
-              <p className="day"> Day 11</p>
-              <ul>
                 <li>{Data.module3_row19}</li>
-              </ul>
-              <p className="day"> Day 12</p>
-              <ul>
-                <li>{Data.module3_row20}</li>
-                <li>{Data.module3_row21}</li>
               </ul>
             </div>
             <div className="right">
@@ -382,60 +491,113 @@ export const FullStackDetail = () => {
                 <li>{Data.module4_row2}</li>
                 <li>{Data.module4_row3}</li>
                 <li>{Data.module4_row4}</li>
-              </ul>
-              <p className="day"> Day 2</p>
-              <ul>
                 <li>{Data.module4_row5}</li>
                 <li>{Data.module4_row6}</li>
               </ul>
-              <p className="day"> Day 3</p>
+              <p className="day"> Day 2</p>
               <ul>
                 <li>{Data.module4_row7}</li>
                 <li>{Data.module4_row8}</li>
+                <li>{Data.module4_row9}</li>
+                <li>{Data.module4_row10}</li>
+                <li>{Data.module4_row11}</li>
+              </ul>
+              <p className="day"> Day 3</p>
+              <ul>
+                <li>{Data.module4_row12}</li>
               </ul>
               <p className="day"> Day 4</p>
               <ul>
-                <li>{Data.module4_row9}</li>
-                <li>{Data.module4_row10}</li>
+                <li>{Data.module4_row13}</li>
+                <li>{Data.module4_row14}</li>
+                <li>{Data.module4_row15}</li>
+                <li>{Data.module4_row16}</li>
               </ul>
               <p className="day"> Day 5</p>
               <ul>
-                <li>{Data.module4_row11}</li>
-                <li>{Data.module4_row12}</li>
+                <li>{Data.module4_row17}</li>
+                <li>{Data.module4_row18}</li>
+                <li>{Data.module4_row19}</li>
+                <li>{Data.module4_row20}</li>
+                <li>{Data.module4_row21}</li>
+                <li>{Data.module4_row22}</li>
               </ul>
               <p className="day"> Day 6</p>
               <ul>
-                <li>{Data.module4_row13}</li>
+                <li>{Data.module4_row23}</li>
               </ul>
               <p className="day"> Day 7</p>
               <ul>
-                <li>{Data.module4_row14}</li>
-                <li>{Data.module4_row15}</li>
+                <li>{Data.module4_row24}</li>
+                <li>{Data.module4_row25}</li>
+                <li>{Data.module4_row26}</li>
+                <li>{Data.module4_row27}</li>
+                <li>{Data.module4_row28}</li>
+                <li>{Data.module4_row29}</li>
               </ul>
               <p className="day"> Day 8</p>
               <ul>
-                <li>{Data.module4_row16}</li>
-                <li>{Data.module4_row17}</li>
+                <li>{Data.module4_row30}</li>
+                <li>{Data.module4_row31}</li>
+                <li>{Data.module4_row32}</li>
+                <li>{Data.module4_row33}</li>
+                <li>{Data.module4_row34}</li>
               </ul>
               <p className="day"> Day 9</p>
               <ul>
-                <li>{Data.module4_row18}</li>
-                <li>{Data.module4_row19}</li>
+                <li>{Data.module4_row35}</li>
               </ul>
               <p className="day"> Day 10</p>
               <ul>
-                <li>{Data.module4_row20}</li>
-                <li>{Data.module4_row21}</li>
+                <li>{Data.module4_row36}</li>
+                <li>{Data.module4_row37}</li>
+                <li>{Data.module4_row38}</li>
+                <li>{Data.module4_row39}</li>
+                <li>{Data.module4_row40}</li>
               </ul>
               <p className="day"> Day 11</p>
               <ul>
-                <li>{Data.module4_row22}</li>
-                <li>{Data.module4_row23}</li>
+                <li>{Data.module4_row41}</li>
+                <li>{Data.module4_row42}</li>
+                <li>{Data.module4_row43}</li>
+                <li>{Data.module4_row44}</li>
+                <li>{Data.module4_row45}</li>
               </ul>
               <p className="day"> Day 12</p>
               <ul>
-                <li>{Data.module4_row24}</li>
-                <li>{Data.module4_row25}</li>
+                <li>{Data.module4_row46}</li>
+              </ul>
+              <p className="day"> Day 13</p>
+              <ul>
+                <li>{Data.module4_row47}</li>
+                <li>{Data.module4_row48}</li>
+                <li>{Data.module4_row49}</li>
+                <li>{Data.module4_row50}</li>
+                <li>{Data.module4_row51}</li>
+                <li>{Data.module4_row52}</li>
+              </ul>
+              <p className="day"> Day 14</p>
+              <ul>
+                <li>{Data.module4_row53}</li>
+                <li>{Data.module4_row54}</li>
+                <li>{Data.module4_row55}</li>
+                <li>{Data.module4_row56}</li>
+                <li>{Data.module4_row57}</li>
+              </ul>
+              <p className="day"> Day 15</p>
+              <ul>
+                <li>{Data.module4_row58}</li>
+              </ul>
+              <p className="day"> Day 16+17</p>
+              <ul>
+                <li>{Data.module4_row59}</li>
+                <li>{Data.module4_row60}</li>
+
+              </ul>
+              <p className="day"> Day 18</p>
+              <ul>
+                <li>{Data.module4_row61}</li>
+                <li>{Data.module4_row62}</li>
               </ul>
             </div>
           </div>
@@ -456,20 +618,122 @@ export const FullStackDetail = () => {
               <ul>
                 <li>{Data.module5_row1}</li>
                 <li>{Data.module5_row2}</li>
+                <li>{Data.module5_row3}</li>
+                <li>{Data.module5_row4}</li>
+                <li>{Data.module5_row5}</li>
+                <li>{Data.module5_row6}</li>
+                <li>{Data.module5_row7}</li>
+                <li>{Data.module5_row8}</li>
               </ul>
               <p className="day"> Day 2</p>
               <ul>
-                <li>{Data.module5_row3}</li>
-                <li>{Data.module5_row4}</li>
+                <li>{Data.module5_row9}</li>
+                <li>{Data.module5_row10}</li>
+                <li>{Data.module5_row11}</li>
+                <li>{Data.module5_row12}</li>
+                <li>{Data.module5_row13}</li>
               </ul>
               <p className="day"> Day 3</p>
               <ul>
-                <li>{Data.module5_row5}</li>
-                <li>{Data.module5_row6}</li>
+                <li>{Data.module5_row14}</li>
               </ul>
               <p className="day"> Day 4</p>
               <ul>
-                <li>{Data.module5_row7}</li>
+                <li>{Data.module5_row15}</li>
+                <li>{Data.module5_row16}</li>
+                <li>{Data.module5_row17}</li>
+                <li>{Data.module5_row18}</li>
+                <li>{Data.module5_row19}</li>
+                <li>{Data.module5_row20}</li>
+                <li>{Data.module5_row21}</li>
+              </ul>
+              <p className="day"> Day 5</p>
+              <ul>
+                <li>{Data.module5_row22}</li>
+                <li>{Data.module5_row23}</li>
+                <li>{Data.module5_row24}</li>
+                <li>{Data.module5_row25}</li>
+                <li>{Data.module5_row26}</li>
+                <li>{Data.module5_row27}</li>
+                <li>{Data.module5_row28}</li>
+              </ul>
+              <p className="day"> Day 6</p>
+              <ul>
+                <li>{Data.module5_row29}</li>
+              </ul>
+              <p className="day"> Day 7</p>
+              <ul>
+                <li>{Data.module5_row30}</li>
+                <li>{Data.module5_row31}</li>
+                <li>{Data.module5_row32}</li>
+                <li>{Data.module5_row33}</li>
+                <li>{Data.module5_row34}</li>
+              </ul>
+              <p className="day"> Day 8</p>
+              <ul>
+                <li>{Data.module5_row35}</li>
+                <li>{Data.module5_row36}</li>
+                <li>{Data.module5_row37}</li>
+                <li>{Data.module5_row38}</li>
+                <li>{Data.module5_row39}</li>
+              </ul>
+              <p className="day"> Day 9</p>
+              <ul>
+                <li>{Data.module5_row40}</li>
+              </ul>
+              <p className="day"> Day 10</p>
+              <ul>
+                <li>{Data.module5_row41}</li>
+                <li>{Data.module5_row42}</li>
+                <li>{Data.module5_row43}</li>
+                <li>{Data.module5_row44}</li>
+                <li>{Data.module5_row45}</li>
+                <li>{Data.module5_row46}</li>
+              </ul>
+              <p className="day"> Day 11</p>
+              <ul>
+                <li>{Data.module5_row47}</li>
+                <li>{Data.module5_row48}</li>
+                <li>{Data.module5_row49}</li>
+              </ul>
+              <p className="day"> Day 12</p>
+              <ul>
+                <li>{Data.module5_row50}</li>
+              </ul>
+              <p className="day"> Day 13</p>
+              <ul>
+                <li>{Data.module5_row51}</li>
+                <li>{Data.module5_row52}</li>
+                <li>{Data.module5_row53}</li>
+                <li>{Data.module5_row54}</li>
+              </ul>
+              <p className="day"> Day 14</p>
+              <ul>
+                <li>{Data.module5_row55}</li>
+                <li>{Data.module5_row56}</li>
+                <li>{Data.module5_row57}</li>
+                <li>{Data.module5_row58}</li>
+                <li>{Data.module5_row59}</li>
+              </ul>
+              <p className="day"> Day 15</p>
+              <ul>
+                <li>{Data.module5_row60}</li>
+              </ul>
+              <p className="day"> Day 16</p>
+              <ul>
+                <li>{Data.module5_row61}</li>
+                <li>{Data.module5_row62}</li>
+                <li>{Data.module5_row63}</li>
+                <li>{Data.module5_row64}</li>
+              </ul>
+              <p className="day"> Day 17</p>
+              <ul>
+                <li>{Data.module5_row65}</li>
+              </ul>
+              <p className="day"> Day 18</p>
+              <ul>
+                <li>{Data.module5_row66}</li>
+                <li>{Data.module5_row67}</li>
               </ul>
             </div>
             <div className="right">
@@ -477,7 +741,118 @@ export const FullStackDetail = () => {
             </div>
           </div>
         </div>
-      </section>
+        {/* MODULE 6 */}
+        <div>
+          <div className="node">Module 6</div>
+        </div>
+        <div className="content-box-5">
+          {/* Đường thẳng từ trên xuống dưới */}
+          <div className="line"> </div>
+          {/* Điểm tròn chính giữ */}
+          <div className="point"></div>
+          <div className="module-6">
+            <div className="left">
+              <img src={Data.module6_img} alt="Image-box-5" />
+            </div>
+            <div className="right">
+              <p className="module-title">{Data.module6_title}</p>
+              <div className="day"> Day 0</div>
+              <ul>
+                <li>{Data.module6_row1}</li>
+              </ul>
+              <div className="day"> Day 1</div>
+              <ul>
+                <li>{Data.module6_row2}</li>
+                <li>{Data.module6_row3}</li>
+                <li>{Data.module6_row4}</li>
+                <li>{Data.module6_row5}</li>
+              </ul>
+              <p className="day"> Day 2</p>
+              <ul>
+                <li>{Data.module6_row6}</li>
+                <li>{Data.module6_row7}</li>
+                <li>{Data.module6_row8}</li>
+                <li>{Data.module6_row9}</li>
+              </ul>
+              <p className="day"> Day 3</p>
+              <ul>
+                <li>{Data.module6_row10}</li>
+                <li>{Data.module6_row11}</li>
+                <li>{Data.module6_row12}</li>
+                <li>{Data.module6_row13}</li>
+                <li>{Data.module6_row14}</li>
+                <li>{Data.module6_row15}</li>
+              </ul>
+              <p className="day"> Day 4</p>
+              <ul>
+                <li>{Data.module6_row16}</li>
+                <li>{Data.module6_row17}</li>
+                <li>{Data.module6_row18}</li>
+                <li>{Data.module6_row19}</li>
+                <li>{Data.module6_row20}</li>
+                <li>{Data.module6_row21}</li>
+              </ul>
+              <p className="day"> Day 5</p>
+              <ul>
+                <li>{Data.module6_row22}</li>
+                <li>{Data.module6_row23}</li>
+                <li>{Data.module6_row24}</li>
+                <li>{Data.module6_row25}</li>
+              </ul>
+              <p className="day"> Day 6</p>
+              <ul>
+                <li>{Data.module6_row26}</li>
+                <li>{Data.module6_row27}</li>
+                <li>{Data.module6_row28}</li>
+                <li>{Data.module6_row29}</li>
+                <li>{Data.module6_row30}</li>
+              </ul>
+              <p className="day"> Day 7</p>
+              <ul>
+                <li>{Data.module6_row31}</li>
+                <li>{Data.module6_row32}</li>
+                <li>{Data.module6_row33}</li>
+                <li>{Data.module6_row34}</li>
+              </ul>
+              <p className="day"> Day 8</p>
+              <ul>
+                <li>{Data.module6_row35}</li>
+              </ul>
+              <p className="day"> Day 9</p>
+              <ul>
+                <li>{Data.module6_row36}</li>
+                <li>{Data.module6_row37}</li>
+              </ul>
+              <p className="day"> Day 10</p>
+              <ul>
+                <li>{Data.module6_row38}</li>
+                <li>{Data.module6_row39}</li>
+              </ul>
+
+              <p className="day"> Day 11</p>
+              <ul>
+                <li>{Data.module6_row40}</li>
+                <li>{Data.module6_row41}</li>
+              </ul>
+              <p className="day"> Day 12</p>
+              <ul>
+                <li>{Data.module6_row42}</li>
+                <li>{Data.module6_row43}</li>
+                <li>{Data.module6_row44}</li>
+              </ul>
+              <p className="day"> Day 13+14+15+16</p>
+              <ul>
+                <li>{Data.module6_row45}</li>
+                <li>{Data.module6_row46}</li>
+              </ul>
+              <p className="day"> Day 17+18</p>
+              <ul>
+                <li>{Data.module6_row47}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section >
       <Footer />
     </>
   );
