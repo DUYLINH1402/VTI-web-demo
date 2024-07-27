@@ -1,0 +1,14 @@
+  // CAROUSEL của Andt phải dùng className riêng
+  
+  .carousel-img {
+      width: 100%;
+      margin: 0 auto;
+    //   border-radius: 20px;
+  }
+
+  .ant-carousel .slick-dots li button {
+      color: #bf1c1c;
+      font-size: 0;
+      background: hsl(0, 2%, 32%);
+      border-radius: 3px;
+  }
