@@ -1,4 +1,5 @@
 import { CardCoach } from '../card/Card';
+import { Footer } from '../Home/Footer';
 import './coach.scss';
 import { CoachData } from './CoachData';
 
@@ -26,6 +27,9 @@ export const Coach = () => {
             <CardCoach item={item} id={index} />
           ))}
         </div>
+      </section>
+      <section>
+        <Footer />
       </section>
     </>
   );
