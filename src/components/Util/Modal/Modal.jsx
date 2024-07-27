@@ -1,6 +1,6 @@
 import './modal.scss';
 import { useRef, useState } from 'react';
-import { Modal, Input, Alert } from 'antd';
+import { Modal, Input, message  } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import axios from 'axios';
 import { APIEndPoin } from '../API';
@@ -22,6 +22,7 @@ export const InputInfo = () => {
   const phoneNumberRef = useRef(null);
   const addressRef = useRef(null);
   const courseRef = useRef(null);
+  const [err, listError] = useState(null);
 
   const handleOk = () => {
     // Khi có lỗi nhập liệu, mở debugger lên để kiểm tra luồng chạy
@@ -35,22 +36,35 @@ export const InputInfo = () => {
       // CHÚ Ý: Vì dùng thẻ textArea để nhận dữ liệu nên cần resizableTextArea.textArea.value.
       course: courseRef.current.resizableTextArea.textArea.value,
     };
+
+    // VALIDATE MODAL
+    // Nếu input vào rỗng thì trả về thông báo lỗi
+    // ngược lại không trả gì cả
+    if ((fullNameRef.current.input.value).trim() == ''||
+    (phoneNumberRef.current.input.value).trim()=='') {
+      listError({ message: 'Vui lòng nhập tên!' });
+      return;
+    } else {
+      listError(null);
+    }
+
     console.log('obj: ', obj);
     // Call API POST
     axios
       // Truyền obj vào method POST và truyền đúng URL
       .post(APIEndPoin + 'advise_info', obj)
       .then((response) => {
-        alertSuccess();
+
         handleCancel();
         // alert Có thể phát triển thành Modal sẽ OK hơn
         alert('Gửi thông tin thành công!');
       })
       .catch((err) => {
-        alert('err', err);
+        alert('Đã xảy ra lỗi!', err);
       });
     console.log(err, 'list err');
   };
+  // debugger;
   return (
     <>
       <article>
@@ -72,14 +86,16 @@ export const InputInfo = () => {
             // Tạo nút Cancel trong Modal
             onCancel={handleCancel}
           >
+            
             <div className="input-info">
               <Input
                 // className="form-input fullname "
                 name="fullName"
                 ref={fullNameRef}
-                // status={fullName ? 'success' : 'error'}
+                // status={err?.fullName ? 'error' : 'seccess'}
                 placeholder="Họ và tên *"
               />
+              {err? <span>{err?.message}</span> : null}
               <Input
                 // className="form-input email"
                 name="email"
@@ -93,6 +109,7 @@ export const InputInfo = () => {
                 ref={phoneNumberRef}
                 // status={phoneNumber ? 'success' : 'error'}
                 placeholder="Số điện thoại *"
+                
               />
               <Input
                 // className="form-input address"
