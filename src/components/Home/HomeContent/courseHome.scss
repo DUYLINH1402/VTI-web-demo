@@ -1,0 +1,47 @@
+.source-content-page {
+  display: flex;
+  flex-flow: column;
+  background: #bbccd8;
+  border-radius: 20px;
+  .inte-brnd {
+    ul {
+      --d: 10s; /* duration */
+      display: grid;
+      .card-content {
+        grid-area: 1/20;
+        height: 200px;
+        aspect-ratio: 1;
+        /* Hiệu ứng chuyển động
+       - slider: tên @keyframes
+       - 170s: animation-duration
+       - linear: Hoạt ảnh diễn ra với tốc độ đều đặn từ đầu đến cuối
+       - animation-iteration-count: infinite (vòng lặp vô hạn)
+        */
+        animation: slider 60s linear infinite;
+        animation-play-state: running;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 250px;
+        justify-content: center;
+      }
+    }
+  }
+  .slider {
+    border: 3px solid #aa570a;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+
+@keyframes slider {
+  // Dịch sang trái
+
+  50% {
+    transform: translate(-200%);
+  }
+  // Dịch sang phải
+  100% {
+    transform: translate(10%);
+  }
+}
