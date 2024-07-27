@@ -1,0 +1,31 @@
+@use '../../Home/base.scss';
+// .ant-modal-root .ant-modal-wrap {
+.advise {
+  position: fixed;
+  right: 4px;
+  bottom: 4px;
+  z-index: 2;
+  scale: 0.9;
+
+  // MODAL Ant Design sử dụng className đặc biệt
+}
+.ant-modal {
+  .ant-modal-content {
+    border-radius: 20px;
+    padding: 50px;
+    // Tiêu đề Modal
+    .ant-modal-title {
+      color: base.$blue;
+      font-size: 25px;
+    }
+    // Các dòng input của Modal
+    .ant-input-outlined {
+      margin-top: 15px;
+      // margin-bottom: 15px;
+      height: 38px;
+    }
+  }
+  .ant-input-outlined:active {
+    box-shadow: -3px 3px rgba(91, 145, 180, 0.6);
+  }
+}
