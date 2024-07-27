@@ -2,7 +2,6 @@ import './pmpDetail.scss';
 import { PMPData } from './PMPData.jsx';
 import { Footer } from '../../Home/Footer';
 import { WhyChoseMe } from '../UtilData/WhyChoseMe';
-import { InputInfo } from '../../Modal/Modal';
 export const PMPDetail = () => {
   return (
     <>
