@@ -4,21 +4,30 @@
 .footer {
   background-color: base.$footerColor;
   display: flex;
-  // border-radius: 15px;
   justify-content: center;
-  margin-top: 15px;
-  ul {
-    li {
-      font-size: smaller;
-      font-weight: 300;
-      text-align: left;
+  // margin-top: 15px;
+
+  .column-1,
+  .column-2,
+  .column-3 {
+    margin: 0px;
+    list-style: none;
+    font-size: smaller;
+    font-weight: 300;
+    text-align: left;
+
+    img {
+      width: 14px;
+      margin-right: 7px;
     }
   }
+
   .column-4 div {
     display: flex;
     margin-right: 8px;
   }
 }
+
 .Copyright {
   color: white;
   background-color: base.$blue;
