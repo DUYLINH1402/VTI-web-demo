@@ -1,6 +1,6 @@
 import './header.scss';
 import { Outlet, Link } from 'react-router-dom';
-import { InputInfo } from '../Modal/Modal';
+import { InputInfo } from '../Util/Modal/Modal';
 
 // Tạo thuộc tính tốc ký (Có thể tách ra Component riêng)
 const MenuHeader = [
