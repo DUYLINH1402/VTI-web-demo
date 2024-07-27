@@ -1,4 +1,5 @@
 import { CardStudent } from '../card/Card';
+import { Footer } from '../Home/Footer';
 import './student.scss';
 import { StudentData } from './StudentData';
 
@@ -22,6 +23,9 @@ export const Student = () => {
             <CardStudent item={item} id={index} />
           ))}
         </div>
+      </section>
+      <section>
+        <Footer />
       </section>
     </>
   );
