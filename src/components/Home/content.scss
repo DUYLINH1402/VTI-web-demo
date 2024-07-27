@@ -1,13 +1,13 @@
 @use './base.scss';
 
-.content {
+.content-home {
   img {
     width: 100%;
     height: 100%;
   }
-  #img-content-2 {
+  #img-content {
+    scale: 0.8;
     margin-top: -50px;
-    scale: 0.78;
   }
 }
 #title-cource {
