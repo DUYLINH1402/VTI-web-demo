@@ -20,7 +20,7 @@ export const Student = () => {
         <h1 className="title-student">Cựu học viên VTI Academy</h1>
         <div className="source-student">
           {StudentData.map((item, index) => (
-            <CardStudent item={item} id={index} />
+            <CardStudent item={item} key={index} />
           ))}
         </div>
       </section>
