@@ -17,8 +17,8 @@ export const Blog = () => {
           <h3 id="para-blog">Cập nhật các tin tức mới nhất về công nghệ</h3>
         </div>
         <div className="blog-content">
-          {BlogContent.map((item) => (
-            <CardBlog item={item} />
+          {BlogContent.map((item, index) => (
+            <CardBlog item={item} key={index}/>
           ))}
         </div>
       </section>
