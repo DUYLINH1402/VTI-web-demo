@@ -24,7 +24,7 @@ export const Coach = () => {
         <div className="source-coach">
           
           {CoachData.map((item, index) => (
-            <CardCoach item={item} id={index} />
+            <CardCoach item={item} key={index} />
           ))}
         </div>
       </section>
