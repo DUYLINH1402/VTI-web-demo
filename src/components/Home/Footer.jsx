@@ -1,7 +1,7 @@
 import './footer.scss';
-import facebookIcon from './../../image/facebookIcon.svg';
-import tiktokIcon from './../../image/tiktokIcon.svg';
-import youtubeIcon from './../../image/youtubeIcon.svg';
+import facebook from './../../image/facebook.svg';
+import tiktok from './../../image/tiktok.svg';
+import youtube from './../../image/youtube.svg';
 import map from './../../image/map.svg';
 import phone from './../../image/phone.svg';
 export const Footer = () => {
@@ -97,21 +97,21 @@ export const Footer = () => {
         <ul className="column-4">
           <h3>Kết nối</h3>
           <div>
-            <pan>
+            <span>
               <a href="#">
-                <img src={tiktokIcon} alt="TikTok icon" />
+                <img src={tiktok} alt="TikTok icon" />
               </a>
-            </pan>
-            <pan>
+            </span>
+            <span>
               <a href="#">
-                <img src={facebookIcon} alt="Facabook icon" />
+                <img src={facebook} alt="Facabook icon" />
               </a>
-            </pan>
-            <pan>
+            </span>
+            <span>
               <a href="#">
-                <img src={youtubeIcon} alt="YouTube icon" />
+                <img src={youtube} alt="YouTube icon" />
               </a>
-            </pan>
+            </span>
           </div>
         </ul>
       </div>
