@@ -20,6 +20,8 @@ import { TesterISTQBDetail } from '../CourseDetail/TesterISTQB/TesterISTQB.jsx';
 import { FrontEndDetail } from '../CourseDetail/FrontEnd/FrontEndDetail.jsx';
 import { AutomationTestDetail } from '../CourseDetail/AutomationTest/AutomationTestDetail.jsx';
 import { FullStackDetail } from '../CourseDetail/FullStack/FullStack.jsx';
+import { Login } from '../LoginPage/Login.jsx';
+import { RigisterForm } from '../LoginPage/RigisterForm/RigisterForm.jsx';
 
 // Khởi tạo ra một react router dom -- khởi tạo ra một bộ điều hướng cho website
 const routerHome = createBrowserRouter([
@@ -28,6 +30,10 @@ const routerHome = createBrowserRouter([
     element: <Header />,
     errorElement: <ErrorPage />, // Khi chuyển đến 1 liên kết lỗi sẽ hiển thị lỗi ErrorPage
     children: [
+      {
+        path: '/login', // go to login
+        element: <Login />,
+      },
       {
         path: '/', // go to HomePage
         element: <Content />, // element là nội dung
@@ -64,9 +70,10 @@ const routerHome = createBrowserRouter([
         path: '/contact', // go to contact
         element: <Contact />,
       },
+      
       {
-        path: '/group', // go to group
-        element: <>This is Group</>,
+        path: '/rigister', // go to FullStackDetail Detail
+        element: <RigisterForm />,
       },
       {
         path: '/PMP', // go to PMP Detail
@@ -106,7 +113,7 @@ const routerHome = createBrowserRouter([
         element: <FullStackDetail />,
       },
     ],
-  },
+  }
 ]);
 
 export const Home = () => {
