@@ -16,9 +16,9 @@ export const Partner = (item) => {
         <h1 id="title-partner">Đối tác của VTI</h1>
         <div className="partner-logo">
           <ul>
-            {PartnerData.map((item) => (
-              <li>
-                <CardPartner item={item} key={item.id} />
+            {PartnerData.map((item, index) => (
+              <li key={index}>
+                <CardPartner item={item}  />
               </li>
             ))}
           </ul>
