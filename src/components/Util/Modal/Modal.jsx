@@ -4,7 +4,7 @@ import { Modal, Input, message } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import axios from 'axios';
 import { APIEndPoin } from '../API';
-import { ShowMessageErr } from '../ShowMessageErr/ShowMessageErr';
+// import { ShowMessageErr } from '../ShowMessageErr/ShowMessageErr';
 
 export const InputInfo = () => {
   // Show Modal
