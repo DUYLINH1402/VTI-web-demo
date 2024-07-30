@@ -1,0 +1,178 @@
+@use './../Home/base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+.container-login {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: rgb(12, 12, 12);
+  font-size: 14px;
+  font-family: base.$font-text;
+
+}
+
+h2,
+a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.wrapper {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-family: base.$font-text;
+
+  .login {
+    width: 300px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    z-index: 2;
+    input{
+    color: #fff;
+
+    }
+    input:hover{
+      
+      border-color: hwb(63 1% 4%);
+    }
+    .login-other-title {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .login-other {
+      display: flex;
+      color: #fff;
+      // flex: ;
+
+      .login-with {
+        width: 120px;
+        height: 35px;
+        text-align: center;
+        border: solid 1px rgb(247, 243, 243);
+        margin: auto 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 30px;
+        margin-right: 5px;
+      }
+    }
+
+  }
+
+  .line {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+
+    &:nth-child(1) {
+      border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+      animation: anim 6s linear infinite;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    }
+
+    &:nth-child(2) {
+      animation: anim 4s linear infinite;
+    }
+
+    &:nth-child(3) {
+      animation: anim2 10s linear infinite;
+    }
+  }
+}
+
+.wrapper:hover .line-1 {
+  border: 3px solid #00ff0a;
+  filter: drop-shadow(0 0 20px #00ff0a);
+}
+
+.wrapper:hover .line-2 {
+  border: 3px solid #ff0057;
+  filter: drop-shadow(0 0 20px #ff0057);
+}
+
+.wrapper:hover .line-3 {
+  border: 3px solid #fffd44;
+  filter: drop-shadow(0 0 20px #fffd44);
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background: transparent;
+  font-size: 14px;
+  box-shadow: none;
+  outline: none;
+}
+
+input[type='submit'] {
+  width: 100%;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
