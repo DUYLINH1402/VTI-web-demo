@@ -25,7 +25,9 @@ h1 {
         font-size: 15px;
         word-spacing: 2px;
         line-height: 25px;
-
+        .btn:hover{
+          opacity: .8;
+        }
         .btn {
           width: 540px;
           display: flex;
