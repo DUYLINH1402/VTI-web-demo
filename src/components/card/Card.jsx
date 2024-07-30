@@ -28,9 +28,7 @@ export const CardPartner = ({ item }) => {
   return (
     <article className="card-partner" key={item.id}>
       <div className="card-partner-image">
-        <Link to={item.href}>
-          <img src={item.logo} alt="Image not found" width="100" height="80" />
-        </Link>
+        <img src={item.logo} alt="Image not found" width="100" height="80" />
       </div>
     </article>
   );
