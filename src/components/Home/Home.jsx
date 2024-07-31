@@ -26,14 +26,19 @@ import { RigisterForm } from '../LoginPage/RigisterForm/RigisterForm.jsx';
 // Khởi tạo ra một react router dom -- khởi tạo ra một bộ điều hướng cho website
 const routerHome = createBrowserRouter([
   {
+    path: '/login', // go to login
+    element: <Login />,
+  },
+  {
+    path: '/rigister', // go to FullStackDetail Detail
+    element: <RigisterForm />,
+  },
+  {
     path: '/', // go to HomePage
     element: <Header />,
     errorElement: <ErrorPage />, // Khi chuyển đến 1 liên kết lỗi sẽ hiển thị lỗi ErrorPage
     children: [
-      {
-        path: '/login', // go to login
-        element: <Login />,
-      },
+
       {
         path: '/', // go to HomePage
         element: <Content />, // element là nội dung
@@ -70,11 +75,8 @@ const routerHome = createBrowserRouter([
         path: '/contact', // go to contact
         element: <Contact />,
       },
+
       
-      {
-        path: '/rigister', // go to FullStackDetail Detail
-        element: <RigisterForm />,
-      },
       {
         path: '/PMP', // go to PMP Detail
         element: <PMPDetail />,
