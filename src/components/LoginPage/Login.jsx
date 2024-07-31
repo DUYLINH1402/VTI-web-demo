@@ -69,9 +69,9 @@ export const Login = () => {
                                 href='#'>
                                 <img src={google} alt="google" 
                                  />Google</a>
-                            <a className='login-with'
+                            {/* <a className='login-with'
                                 href='#'>
-                                <img src={facebook} alt="facebook" />Facebook</a>
+                                <img src={facebook} alt="facebook" />Facebook</a> */}
 
                         </div>
                     </div>
