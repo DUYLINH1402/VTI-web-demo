@@ -6,10 +6,12 @@
   display: flex;
   justify-content: center;
   padding-top: 10px;
+
   .advise img {
     width: 70px;
     height: 80px;
   }
+
   .back-top {
     position: fixed;
     scale: 0.8;
@@ -20,6 +22,7 @@
     border-radius: 100%;
     transition: 0.5s;
   }
+
   .info-designer {
     /* Căn chỉnh vị trí Box Designer */
     position: fixed;
@@ -32,14 +35,17 @@
     font-size: 10px;
     color: base.$brow;
   }
+
   .header-logo {
     margin: 15px;
   }
+
   .header-right {
     ul {
       display: flex;
       text-align: center;
       padding-top: 8px;
+
       li {
         list-style: none;
         padding-left: 15px;
@@ -47,15 +53,37 @@
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 500;
+        justify-content: center;
+
         // Mặc dù dùng thẻ Link nhưng khi css thì chọc vào thẻ </a>
         a {
           color: base.$blue;
           text-decoration: none;
         }
+
         a:hover {
           color: rgb(82, 154, 231);
         }
+
       }
     }
+  }
+
+  .header-logout {
+    font-size: 16px;
+    background-color: base.$headerColor;
+    padding: 5px;
+    text-align: center;
+    margin-top: 18px;
+    cursor: pointer;
+    color: base.$blue;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+  }
+
+  .header-logout:hover {
+    color: rgb(82, 154, 231);
   }
 }
