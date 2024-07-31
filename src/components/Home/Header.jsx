@@ -1,7 +1,9 @@
 import './header.scss';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { InputInfo } from '../Util/Modal/Modal';
-
+import { app } from '../../firebase';
+import { getAuth, signOut } from "firebase/auth";
 
 // Tạo thuộc tính tốc ký (Có thể tách ra Component riêng)
 const MenuHeader = [
@@ -14,10 +16,30 @@ const MenuHeader = [
   { name: 'Chuyên gia', id: 'coach', src: 'coach' },
   { name: 'Liên hệ', id: 'contact', src: 'contact' },
   { name: 'Blog', id: 'blog', src: 'blog' },
-  { name: 'Login', id: 'login', src: 'login' },
+  // { name: 'Logout', id: 'logout', src: 'login' },
 ];
 
 export const Header = () => {
+  // if exit authen ...
+  const token = localStorage.getItem('token');
+  const navigate = useNavigate();
+  const auth = getAuth(app);
+
+  useEffect(() => {
+    if (!token) { // check if token return false
+      navigate('/login'); // Điều hướng về trang Login
+    }
+  }, token);
+  const onLogOutPage = () => {
+    localStorage.clear(); // delete token from localstorage
+    signOut(auth).then(() => {
+      // Sign-out successful.
+      navigate('/login');
+    }).catch((error) => {
+      // An error happened.
+      alert(error)
+    });
+  }
   return (
     <>
       <article>
@@ -29,7 +51,7 @@ export const Header = () => {
               alt="back to top"
             />
           </a>
-          
+
           <InputInfo />
           <div className="info-designer">
             Design By <br /> NGUYEN DUY LINH <br /> VTI - Railway 83
@@ -56,10 +78,11 @@ export const Header = () => {
                   </Link>
                 </li>
               ))}
-              {/* <div className="search-icon">
-              <img src={search} height="40" width="40" />
-            </div> */}
             </ul>
+          </div>
+          <div>
+            <button className='header-logout'
+              onClick={onLogOutPage}>Sign out</button>
           </div>
         </section>
         <div id="detail">
