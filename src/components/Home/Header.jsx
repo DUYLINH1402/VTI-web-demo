@@ -16,7 +16,6 @@ const MenuHeader = [
   { name: 'Chuyên gia', id: 'coach', src: 'coach' },
   { name: 'Liên hệ', id: 'contact', src: 'contact' },
   { name: 'Blog', id: 'blog', src: 'blog' },
-  // { name: 'Logout', id: 'logout', src: 'login' },
 ];
 
 export const Header = () => {
