@@ -1,13 +1,7 @@
 @use './../../Home/base.scss';
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-
 .rigister-form {
+    box-sizing: border-box;
     text-align: left;
     width: 450px;
     margin: 15px auto;
