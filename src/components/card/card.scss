@@ -8,23 +8,28 @@
     display: inline-block;
   }
 }
+
 .card-content-image img {
   margin-right: 30px;
   border-radius: 10px;
 }
+
 // Định dạng cho Card Blog
 .card-blog {
   text-decoration: none;
   width: min-content;
+
   .card-blog-image {
     width: 350px;
     height: 240px;
     border-radius: 15px;
     transition: 0.5s;
   }
+
   .card-blog-image:hover {
     transform: scale(1.05);
   }
+
   .new-base {
     background-color: aliceblue;
     position: relative;
@@ -37,26 +42,36 @@
     margin-top: -40px;
     margin-bottom: 60px;
     transition: 0.5s;
+
     #title-new {
       margin-bottom: -10px;
       font-weight: bold;
       color: base.$blue;
     }
+
     #line {
       margin-bottom: -10px;
       // position: absolute;
     }
+
+    #date {
+      color: base.$blue;
+
+    }
+
     #go-click {
       position: absolute;
       right: 25px;
       bottom: 25px;
       transition: 0.5s;
     }
+
     // Khi click vào icon mũi tên sẽ xoay 90 độ
     #go-click:hover {
       transform: rotate(-90deg);
     }
   }
+
   .new-base:hover {
     transform: scale(1.05);
     background-color: rgba(235, 218, 132, 0.814);
@@ -70,17 +85,21 @@
 
   .container-coach {
     display: flex;
+
     // width: 350px;
     .card-coach {
       position: relative;
       width: max-content;
+
       .card-coach-image {
         width: 300px;
         height: 300px;
         max-width: 100%;
       }
+
       .title-name {
         color: base.$blue;
+
         #name {
           margin: 0px 0px;
           font-size: 15px;
@@ -89,12 +108,14 @@
         }
       }
     }
+
     .details-coach {
       #row-name {
         font-size: 16px;
         font-weight: bold;
         color: white;
       }
+
       position: absolute;
       width: 240px;
       background-color: base.$blue;
@@ -110,6 +131,7 @@
       opacity: 0;
       transition: all 0.8s;
     }
+
     // Khi hover vào sẽ hiển thị nội dung thẻ Coach bằng thuộc tính opacity (Cách dễ nhất)
     .details-coach:hover {
       transition: all 0.8s;
@@ -117,14 +139,17 @@
     }
   }
 }
+
 //Card Student
 .student {
   margin-bottom: 50px;
+
   .container {
     display: flex;
     width: 250px;
     justify-content: center;
     margin-right: 20px;
+
     .card-student {
       margin: 0 auto;
       width: 189px;
@@ -133,6 +158,7 @@
       background-image: url(https://vtiacademy.edu.vn/template/frontend/images/bg_cuuhocvien.png);
       // Không cho ảnh nền lặp lại
       background-repeat: no-repeat;
+
       .card-student-image {
         display: block;
         position: absolute;
@@ -145,14 +171,16 @@
         // margin-right: 53px;
       }
     }
+
     .title-name {
       color: base.$blue;
+
       #name {
         margin: 0px 0px;
         font-size: larger;
       }
     }
-    .title-class {
-    }
+
+    .title-class {}
   }
 }
