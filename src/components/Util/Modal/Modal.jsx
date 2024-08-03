@@ -111,7 +111,7 @@ export const InputInfo = () => {
                 // status={phoneNumber ? 'success' : 'error'}
                 placeholder="Số điện thoại *"
               />
-               {err ? <span className="reuqired" >  {err?.message}</span> : null}
+              {err ? <span className="reuqired" >  {err?.message}</span> : null}
               <Input
                 // className="form-input address"
                 name="address"
