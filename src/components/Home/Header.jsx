@@ -1,10 +1,9 @@
 import './header.scss';
 import { Outlet, Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { InputInfo } from '../Util/Modal/Modal';
 import user from './../../image/user.svg';
 import { Profile } from '../Util/Profile/Profile';
-
 // Tạo thuộc tính tốc ký (Có thể tách ra Component riêng)
 const MenuHeader = [
   { name: 'Trang chủ', id: 'home', src: '' },
@@ -16,11 +15,22 @@ const MenuHeader = [
   { name: 'Chuyên gia', id: 'coach', src: 'coach' },
   { name: 'Liên hệ', id: 'contact', src: 'contact' },
   { name: 'Blog', id: 'blog', src: 'blog' },
+
 ];
 
 export const Header = () => {
-  const [ showProfile, setShowProfile]= useState(false)
-  
+  const [showProfile, setShowProfile] = useState(false)
+  // if exit authen ...
+  const token = localStorage.getItem('token');
+  const navigate = useNavigate();
+  // const auth = getAuth(app);
+
+  useEffect(() => {
+    if (!token) { // check if token return false
+      navigate('/login'); // Điều hướng về trang Login
+    }
+  }, token);
+
   return (
     <>
       <article>
@@ -59,16 +69,18 @@ export const Header = () => {
                   </Link>
                 </li>
               ))}
-              
+
             </ul>
           </div>
           {/* Tạo Mounted và Unmounted */}
-            <img
-              className='header-profile'
-              src={user}
-              alt="user-icon"
-              onClick={()=> setShowProfile(!showProfile)}/>
-              { showProfile && <Profile/>}
+          <img
+
+            className='header-profile'
+            src={user}
+            alt="user-icon"
+
+            onClick={() => setShowProfile(!showProfile)} />
+          {showProfile && <Profile />}
         </section>
         <div id="detail">
           {/* Outlet sẽ hiển thị ra children bên phần routerHome*/}
