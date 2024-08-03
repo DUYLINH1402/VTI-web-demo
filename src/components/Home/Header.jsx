@@ -1,9 +1,9 @@
 import './header.scss';
 import { Outlet, Link, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useState } from 'react';
 import { InputInfo } from '../Util/Modal/Modal';
-import { app } from '../../firebase';
-import { getAuth, signOut } from "firebase/auth";
+import user from './../../image/user.svg';
+import { Profile } from '../Util/Profile/Profile';
 
 // Tạo thuộc tính tốc ký (Có thể tách ra Component riêng)
 const MenuHeader = [
@@ -19,26 +19,8 @@ const MenuHeader = [
 ];
 
 export const Header = () => {
-  // if exit authen ...
-  const token = localStorage.getItem('token');
-  const navigate = useNavigate();
-  const auth = getAuth(app);
-
-  useEffect(() => {
-    if (!token) { // check if token return false
-      navigate('/login'); // Điều hướng về trang Login
-    }
-  }, token);
-  const onLogOutPage = () => {
-    localStorage.clear(); // delete token from localstorage
-    signOut(auth).then(() => {
-      // Sign-out successful.
-      navigate('/login');
-    }).catch((error) => {
-      // An error happened.
-      alert(error)
-    });
-  }
+  const [ showProfile, setShowProfile]= useState(false)
+  
   return (
     <>
       <article>
@@ -77,12 +59,16 @@ export const Header = () => {
                   </Link>
                 </li>
               ))}
+              
             </ul>
           </div>
-          <div>
-            <button className='header-logout'
-              onClick={onLogOutPage}>Sign out</button>
-          </div>
+          {/* Tạo Mounted và Unmounted */}
+            <img
+              className='header-profile'
+              src={user}
+              alt="user-icon"
+              onClick={()=> setShowProfile(!showProfile)}/>
+              { showProfile && <Profile/>}
         </section>
         <div id="detail">
           {/* Outlet sẽ hiển thị ra children bên phần routerHome*/}
