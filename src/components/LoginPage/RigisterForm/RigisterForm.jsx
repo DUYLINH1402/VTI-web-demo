@@ -13,7 +13,7 @@ export const RigisterForm = () => {
 
   function Validator(options) {
     // HÀM THỰC HIỆN VALIDATE
-    function validate(inputElement, rule) {
+    function Validate(inputElement, rule) {
       // Đứng từ inputElement lấy ra thẻ cha của nó sau đó lại chọc vào trong thẻ chứa class error-message
       let errorElement = inputElement.parentElement.querySelector(
         options.errorSelector
@@ -37,7 +37,7 @@ export const RigisterForm = () => {
         if (inputElement) {
           // Xử lý trường hợp blur khỏi inputElement
           inputElement.onblur = function () {
-            validate(inputElement, rule);
+            Validate(inputElement, rule);
           };
           // Xử lý trường hợp mỗi khi người dùng nhập vào inputElement
           inputElement.oninput = function () {
