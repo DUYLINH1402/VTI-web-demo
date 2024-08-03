@@ -63,10 +63,14 @@ a {
         text-align: center;
         border: solid 1px rgb(247, 243, 243);
         margin: auto 10px;
-        padding: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      // Vì không dùng Login bằng FB nên làm mờ nó đi
+      #login-with-facebook{
+        opacity: .4;
+        cursor: auto;
       }
 
       img {
