@@ -30,9 +30,14 @@
       height: 38px;
       
     }
+    .reuqired {
+      color: red;
+    }
   }
 
-  .ant-input-outlined:active {
+  .ant-input-outlined:hover {
     box-shadow: -3px 3px rgba(91, 145, 180, 0.6);
+  }.ant-input-outlined::placeholder {
+    color: rgb(174, 167, 167);
   }
 }
