@@ -1,3 +1,19 @@
+// Code định dạng nội dung muốn bôi đen trên web
+*::selection {
+  color: rgb(13, 12, 12);
+  background-color: orange;
+}
+// Code định dạng thanh cuộn
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #fff172,#4560b9);
+  border-radius: 10px;
+  height: 20px;
+  border : solid 2px green;
+}
+
 #root {
   max-width: 100%;
   justify-content: center;
