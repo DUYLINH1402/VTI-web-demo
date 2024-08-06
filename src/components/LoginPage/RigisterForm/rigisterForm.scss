@@ -10,8 +10,21 @@
     border-radius: 5px;
     box-shadow: 0px 2px 37px 5px rgba(62, 81, 2, 0.80);
     font-size: 15px;
-    .invalid{
-        color:  red;
+
+    .invalid {
+        color: red;
+    }
+
+    .back {
+        padding: 5px;
+        width: fit-content;
+        border-radius: 5px;
+        #arrow-img {
+            display: flexbox;
+            // position: absolute;
+            margin-right: 5px;
+            margin-bottom:-6px ;
+        }
     }
 }
 
