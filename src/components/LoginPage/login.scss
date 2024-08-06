@@ -7,27 +7,30 @@
   margin: 0;
   display: grid;
   place-items: center;
-  background: rgb(12, 12, 12);
-  font-size: 14px;
-  font-family: base.$font-text;
+  background: rgb(245, 245, 245);
 
 }
 
 h2,
 a {
-  color: #fff;
+  color: #141212;
   text-decoration: none;
 
 }
 
 .wrapper {
   position: relative;
-  width: 550px;
+  width: 450px;
   height: 550px;
   display: grid;
   place-items: center;
-  font-size: 14px;
-  font-family: base.$font-text;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 15px auto;
+  padding: 40px;
+  border: 1px solid #bfbcbb;
+  border-radius: 8px;
+  box-shadow: 0px 2px 37px 5px rgba(62, 81, 2, 0.80);
 
   .login {
     width: 300px;
@@ -39,36 +42,40 @@ a {
     gap: 20px;
     font-size: 14px;
     z-index: 2;
-    input{
-    color: #fff;
+
+
+    input {
+      color: #373131;
 
     }
-    input:hover{
-      
-      border-color: hwb(63 1% 4%);
+
+    input:hover {
+      border-color: hwb(116 20% 49%);
     }
+
     .login-other-title {
-      color: #fff;
+      color: #0f0d0d;
       text-decoration: underline;
     }
 
     .login-other {
       display: flex;
-      color: #fff;
+      color: #100f0f;
       // flex: ;
 
       .login-with {
         width: 120px;
         height: 35px;
         text-align: center;
-        border: solid 1px rgb(247, 243, 243);
+        border: solid 1px rgb(14, 11, 11);
         margin: auto 10px;
         display: flex;
         justify-content: center;
         align-items: center;
       }
+
       // Vì không dùng Login bằng FB nên làm mờ nó đi
-      #login-with-facebook{
+      #login-with-facebook {
         opacity: .4;
         cursor: auto;
       }
@@ -81,68 +88,7 @@ a {
 
   }
 
-  .line {
-    position: absolute;
-    inset: 0;
-    border: 2px solid #fff;
-    transition: 0.5s;
-
-    &:nth-child(1) {
-      border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-      animation: anim 6s linear infinite;
-    }
-
-    &:nth-child(2),
-    &:nth-child(3) {
-      border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
-    }
-
-    &:nth-child(2) {
-      animation: anim 4s linear infinite;
-    }
-
-    &:nth-child(3) {
-      animation: anim2 10s linear infinite;
-    }
-  }
 }
-
-.wrapper:hover .line-1 {
-  border: 3px solid #00ff0a;
-  filter: drop-shadow(0 0 20px #00ff0a);
-}
-
-.wrapper:hover .line-2 {
-  border: 3px solid #ff0057;
-  filter: drop-shadow(0 0 20px #ff0057);
-}
-
-.wrapper:hover .line-3 {
-  border: 3px solid #fffd44;
-  filter: drop-shadow(0 0 20px #fffd44);
-}
-
-@keyframes anim {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes anim2 {
-  0% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-
 
 h2 {
   font-size: 2em;
@@ -151,25 +97,33 @@ h2 {
 
 input {
   width: 100%;
-  border: 2px solid #fff;
-  border-radius: 40px;
+  border: 2px solid #8f8686;
   padding: 12px 20px;
   box-sizing: border-box;
   background: transparent;
   font-size: 14px;
   box-shadow: none;
   outline: none;
+  border-radius: 5px;
 }
 
-input[type='submit'] {
+#submit  {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  box-shadow: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
   width: 100%;
-  background: linear-gradient(45deg, #ff357a, #fff172);
+  background: rgba(76, 162, 84, 0.9);
   border: none;
   cursor: pointer;
 }
 
+
 input::placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(60, 55, 55, 0.75);
 }
 
 .links {
@@ -177,6 +131,5 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
   box-sizing: border-box;
 }
