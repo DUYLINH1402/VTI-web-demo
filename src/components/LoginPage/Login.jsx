@@ -96,14 +96,14 @@ export const Login = () => {
                             onClick={() => setLoginWithUser()}
                         >Đăng nhập</button>
                         <div className="links">
-                            <Link id='forget' to="#">Quên mật khẩu?</Link>
-                            <Link id='sign-up' to="/rigister"
-                            >Đăng ký</Link>
+                            <Link id='forgot' to="/forgotPassword">Quên mật khẩu?</Link>
+                            <Link id='sign-up' to="/rigister">Đăng ký</Link>
                         </div>
                         <p className='login-other-title'>Hoặc đăng nhập bằng</p>
                         <div className='login-other'>
                             <a onClick={() => loginGoole()}
                                 className='login-with'
+                                id='login-with-google'
                                 href='#'>
                                 <img src={google} alt="google"
                                 />Google</a>
