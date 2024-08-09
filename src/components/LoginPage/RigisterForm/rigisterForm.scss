@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-align: left;
     width: 450px;
+    height: 550px;
     margin: 15px auto;
     padding: 40px;
     border: 1px solid #bfbcbb;
@@ -19,12 +20,18 @@
         padding: 5px;
         width: fit-content;
         border-radius: 5px;
+
         #arrow-img {
             display: flexbox;
             // position: absolute;
             margin-right: 5px;
-            margin-bottom:-6px ;
+            margin-bottom: -6px;
         }
+    }
+
+    .back:hover {
+        opacity: .8;
+        cursor: pointer;
     }
 }
 
