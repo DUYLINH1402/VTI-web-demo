@@ -4,7 +4,7 @@ import arrow from './../../../image/arrow.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from './../../../firebase';
-
+import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
 
 // import axios from 'axios';
@@ -87,7 +87,7 @@ export const RigisterForm = () => {
     // rigister-form là Form hiện tại đang Validator
     // Có thể áp dụng Validator này cho các form khác nếu trong
     // page có nhiều form
-    form: '#rigister-form',
+    form: 'rigister-form',
     errorSelector: '.error-message',
     rules: [
       // #fullname và #email là 2 đối số (selector) đc nhận vào từ function
@@ -100,28 +100,25 @@ export const RigisterForm = () => {
   const [fullName, setFullName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const [passwordConfirmation, setPasswordConfirmation] = useState();
-
+  // const [passwordConfirmation, setPasswordConfirmation] = useState();
   const createUser = () => {
     const infoLogin = {
-      // fullName,
       email,
       password,
-      // passwordConfirmation,
     };
     createUserWithEmailAndPassword(
       auth,
       infoLogin.email,
       infoLogin.password,
-      )
+    )
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
         console.log('user: ', user);
-        alert('Tạo tài khoản thành công');
 
-        // Nếu tạo User thành công sẽ quay về trang Login
         navigate('/login');
+        alert('Tạo tài khoản thành công');
+        // Nếu tạo User thành công sẽ quay về trang Login
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -142,7 +139,7 @@ export const RigisterForm = () => {
             Quay lại
           </Link>
         </div>
-        <form action="#" className="form" id="rigister-form">
+        <form className="form" id="rigister-form">
           <h3 className="title">Đăng ký thành viên</h3>
 
           <div className="input-group ">
@@ -171,26 +168,27 @@ export const RigisterForm = () => {
           <div className="input-group ">
             <label className="label">Mật khẩu</label>
             <input
-              id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               type="password"
               className="input"
+              id='password'
+
             />
             <span className="error-message invalid"></span>
+            {/* <EyeOutlined /><EyeInvisibleOutlined /> */}
           </div>
-          <div className="input-group ">
+          {/* <div className="input-group ">
             <label className="label">Nhập lại mật khẩu</label>
             <input
               value={passwordConfirmation}
               onChange={(e) => setPasswordConfirmation(e.target.value)}
               type="password"
-              id="password-confirmation"
               className="input"
             />
             <span className="error-message invalid"></span>
-          </div>
-          <button className="button" type='submit'
+          </div> */}
+          <button className="button" type='button'
             onClick={() => createUser()}>
             Đăng ký
           </button>
