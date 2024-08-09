@@ -73,12 +73,16 @@ a {
         justify-content: center;
         align-items: center;
       }
-
+      #login-with-google:hover {
+        opacity: .8;
+        cursor: pointer;
+      }
       // Vì không dùng Login bằng FB nên làm mờ nó đi
       #login-with-facebook {
         opacity: .4;
         cursor: auto;
       }
+      
 
       img {
         width: 30px;
@@ -107,7 +111,7 @@ input {
   border-radius: 5px;
 }
 
-#submit  {
+#submit {
   padding: 12px 20px;
   box-sizing: border-box;
   font-size: 16px;
@@ -132,4 +136,14 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+#forgot:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+#sign-up:hover {
+  cursor: pointer;
+  opacity: .8;
 }
