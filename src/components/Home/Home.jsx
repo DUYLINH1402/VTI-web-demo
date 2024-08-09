@@ -22,6 +22,7 @@ import { AutomationTestDetail } from '../CourseDetail/AutomationTest/AutomationT
 import { FullStackDetail } from '../CourseDetail/FullStack/FullStack.jsx';
 import { Login } from '../LoginPage/Login.jsx';
 import { RigisterForm } from '../LoginPage/RigisterForm/RigisterForm.jsx';
+import { ForgotPassword } from '../LoginPage/ForgotPassword/ForgotPassword.jsx';
 
 // Khởi tạo ra một react router dom -- khởi tạo ra một bộ điều hướng cho website
 const routerHome = createBrowserRouter([
@@ -30,8 +31,12 @@ const routerHome = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: '/rigister', // go to FullStackDetail Detail
+    path: '/rigister', // go to rigister
     element: <RigisterForm />,
+  },
+  {
+    path: '/forgotPassword', // go to forgotPassword
+    element: <ForgotPassword />,
   },
   {
     path: '/', // go to HomePage
