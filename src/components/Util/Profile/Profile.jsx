@@ -25,7 +25,7 @@ export const Profile = () => {
             <section className='container-profile'>
                 <ul className='container-list'>
                     <li className='list-profile'>
-                        <Link to="#"
+                        <Link to="/Profile"
                             className='content-profile'
                         > <span>
                                 <img
@@ -36,7 +36,7 @@ export const Profile = () => {
                         </Link>
                     </li>
                     <li className='list-profile'>
-                        <Link to="#"
+                        <Link to="/MyCourse"
                             className='content-profile'
                         ><span>
                                 <img
@@ -47,7 +47,7 @@ export const Profile = () => {
                         </Link>
                     </li>
                     <li className='list-profile'>
-                        <Link to="#"
+                        <Link to="/Setting"
                             className='content-profile'
                         ><span>
                                 <img
