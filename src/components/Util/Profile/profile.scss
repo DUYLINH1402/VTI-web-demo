@@ -4,12 +4,13 @@
 .container-profile {
     position: absolute;
     width: 200px;
-    right: 0px;
-    top: 84px;
+    right: -14px;
+    top: 59px;
     z-index: 1;
     text-align: left;
     background-color: base.$headerColor;
-
+    border-radius: 5px;
+    animation: fadeIn ease 1.3s;
     ul {
         list-style: none;
         margin: 0px;
