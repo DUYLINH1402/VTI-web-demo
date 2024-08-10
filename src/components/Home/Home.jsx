@@ -23,6 +23,9 @@ import { FullStackDetail } from '../CourseDetail/FullStack/FullStack.jsx';
 import { Login } from '../LoginPage/Login.jsx';
 import { RigisterForm } from '../LoginPage/RigisterForm/RigisterForm.jsx';
 import { ForgotPassword } from '../LoginPage/ForgotPassword/ForgotPassword.jsx';
+import { Profile } from '../ProfilePage/Profile/Profile.jsx';
+import { Setting } from '../ProfilePage/Setting/Setting.jsx';
+import { MyCourse } from '../ProfilePage/MyCourse/MyCourse.jsx';
 
 // Khởi tạo ra một react router dom -- khởi tạo ra một bộ điều hướng cho website
 const routerHome = createBrowserRouter([
@@ -81,7 +84,7 @@ const routerHome = createBrowserRouter([
         element: <Contact />,
       },
 
-      
+
       {
         path: '/PMP', // go to PMP Detail
         element: <PMPDetail />,
@@ -119,6 +122,18 @@ const routerHome = createBrowserRouter([
         path: '/FullStack', // go to FullStackDetail Detail
         element: <FullStackDetail />,
       },
+      {
+        path: '/Profile',
+        element: <Profile />
+      },
+      {
+        path: '/Setting',
+        element: <Setting />
+      },
+      {
+        path: '/MyCourse',
+        element: <MyCourse />
+      }
     ],
   }
 ]);
