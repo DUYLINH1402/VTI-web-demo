@@ -1,4 +1,3 @@
-// Variables
 // Class này tạo ra những thuộc tính dùng cho cả project để đồng nhất về color and font
 $red: rgb(240, 71, 71);
 $blue: #1c3367;
@@ -9,3 +8,24 @@ $font-text: 'Roboto', sans-serif;
 $font-size: 15px;
 $font-number: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
   'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  
+// Animation
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+
+  }
+}
+@keyframes fadeOut{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+
+  }
+}
