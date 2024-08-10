@@ -19,7 +19,6 @@ const MenuHeader = [
 ];
 
 export const Header = () => {
-  const [showProfile, setShowProfile] = useState(false)
   // if exit authen ...
   const token = localStorage.getItem('token');
   const navigate = useNavigate();
@@ -61,9 +60,6 @@ export const Header = () => {
             <ul>
               {MenuHeader.map((item, index) => (
                 <li key={index}>
-                  {/* Dùng thẻ link thay thẻ <a>
-                Để khi click vào liên kết sẽ k load lại trang.
-                Chú ý: to=href */}
                   <Link to={item.src} >
                     {item.name}
                   </Link>
@@ -73,14 +69,14 @@ export const Header = () => {
             </ul>
           </div>
           {/* Tạo Mounted và Unmounted */}
-          <img
-
-            className='header-profile'
-            src={user}
-            alt="user-icon"
-
-            onClick={() => setShowProfile(!showProfile)} />
-          {showProfile && <Profile />}
+          <div className='header-profile'>
+            <img
+              src={user}
+              alt="user-icon"
+            />
+            <span className='bridge-show-profile'></span>
+            <span className='show-profile' ><Profile /></span>
+          </div>
         </section>
         <div id="detail">
           {/* Outlet sẽ hiển thị ra children bên phần routerHome*/}
