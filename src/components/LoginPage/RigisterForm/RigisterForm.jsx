@@ -117,13 +117,13 @@ export const RigisterForm = () => {
         console.log('user: ', user);
 
         navigate('/login');
-        alert('Tạo tài khoản thành công');
+        alert('Đăng ký tài khoản thành công');
         // Nếu tạo User thành công sẽ quay về trang Login
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert('Tạo tài khoản không thành công!')
+        alert('Đăng ký tài khoản không thành công!')
         console.log(errorMessage);
       });
   }
@@ -188,7 +188,8 @@ export const RigisterForm = () => {
             />
             <span className="error-message invalid"></span>
           </div> */}
-          <button className="button" type='button'
+          <button className="button"
+            type='button'
             onClick={() => createUser()}>
             Đăng ký
           </button>
